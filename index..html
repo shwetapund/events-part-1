@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let count = 0;
+            function inc()
+            {
+                count++;
+                document.getElementById("counter").innerHTML = count;
+            }
+            function reset()
+            {
+                count=0;
+                document.getElementById("counter").innerHTML = count;
+            }
+            function dec()
+            {
+                count--;
+                document.getElementById("counter").innerHTML = count;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1 id="counter">0</h1>
+       
+        <button onClick="inc()">+</button>
+        <button onClick="reset()">Reset to zero</button>
+        <button onClick="dec()">-</button>
+    </body>
+</html>
