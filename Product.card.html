@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        let count=0;
+         function inc()
+            {
+                count++;
+                document.getElementById("counter").innerHTML = count;
+            }
+            function reset()
+            {
+                count=0;
+                document.getElementById("counter").innerHTML = count;
+            }
+            function dec()
+            {
+                count--;
+                document.getElementById("counter").innerHTML = count;
+            }
+    </script>
+    <style>
+            
+            .card{
+                
+               height:570px;
+               width: 450px;
+               box-shadow: 4px 4px 7px 7px rgb(247, 243, 243);
+               margin: 70px;
+               background-color: #ffffff;
+               margin-left: 400px;
+            }
+            .img-1{
+                height:200px ;
+                width:300px ;
+               
+                margin-left: 70px;
+            }
+            .bg{
+                background-color: aliceblue;
+            }
+            h1{
+                margin-left: 150px;
+                color: red;
+            }
+            p{
+                font-family:'Times New Roman';
+                font-size: 20px;
+                font-weight: bold;
+                padding:15px;
+                margin-left: 4px;
+            }
+            .img-plus{
+                height: 30px;
+                width: 30px;
+                margin-left:5px;
+            }
+            .img-plus-1{
+                height: 20px;
+                width: 20px;
+                
+            }
+            .img-plus-2{
+                height: 40px;
+                width: 40px;
+                
+            }
+           
+            .small-tag{
+                display:flex;
+                flex-direction: row;
+                
+                margin: 5px;
+                
+            }
+            .main{
+                display: inline-block;
+                display: flex;
+                flex-direction: row;
+            }
+            .tag{
+                padding: 18px;
+            }
+            .stle{
+                margin-left: 20px;
+               
+            }
+            .btn{
+                height: 45px;
+                width: 200px;
+                border: 1px  solid red;
+                background-color: red;
+                border-radius: 50px;
+                margin-left: 130px;
+                margin-top: 20px;
+                color:white;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .btn:hover{
+                cursor: pointer;
+                height: 48px;
+                width: 203px;
+                font-size: 25px;
+                }
+    </style>
+</head>
+<body class="bg">
+
+        <div class="card">
+            <img src="./images/strawberry.jfif"class="img-1"/> 
+            
+                <h1>Strawberries</h1>
+                <p>The garden strawberry is a widely grown hybrid 
+                   &nbsp;&nbsp;&nbsp;spacies of the genous Fragaria. It is cultivated 
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; worldwider for its fruit. 
+                </p><br/>
+            <div class="main">
+              <div class="tag">
+               <b class="stle">Quantity</b>
+                <div class="small-tag">
+            
+                    <button onClick="inc()"><img src="./images/add.png" class="img-plus"/></button>
+                <button onClick="reset()"><img src="./images/one.png" class="img-plus-1"/></button>
+                <button onClick="dec()"></button><img src="./images/minus.png" class="img-plus"/></button>
+                </div>
+              </div>
+              
+              <div class="tag">
+                <b class="stle">Total Price</b>
+                <div class="small-tag">
+                <img src="./images/rupees.png" class="img-plus-2"/>
+                <img src="./images/seven.png" class="img-plus-2"/>
+                </div>
+              </div>
+              
+              <div class="tag">
+                <b class="stle">Delivery</b>
+                <div class="small-tag">
+                <img src="./images/aeroplane.png" class="img-plus-2"/>
+                <span>In 60 mins</span>
+                </div>
+              </div>
+
+            </div>
+            <button class="btn">ADD TO CART</button>
+        </div>
+   
+</body>
+</html>
