@@ -2,7 +2,7 @@
 <html>
 <head>
     <script>
-        let count=0;
+        let count = 0;
          function inc()
             {
                 count++;
@@ -39,9 +39,10 @@
             .bg{
                 background-color: aliceblue;
             }
-            h1{
+            .title{
                 margin-left: 150px;
                 color: red;
+                font-size: 30px;
             }
             p{
                 font-family:'Times New Roman';
@@ -49,23 +50,47 @@
                 font-weight: bold;
                 padding:15px;
                 margin-left: 4px;
+               
             }
             .img-plus{
-                height: 30px;
-                width: 30px;
-                margin-left:5px;
-            }
-            .img-plus-1{
                 height: 20px;
                 width: 20px;
-                
+                margin-left:5px;
+            }
+            .img-plus:hover{
+                cursor: pointer;
+            }
+            .img-plus-0{
+                height: 20px;
+                width: 20px;
+                margin-left:5px;
+            }
+            .img-plus-0:hover{
+                cursor: pointer;
+               
+            }
+            .img-plus-1{
+                height: 30px;
+                width: 30px;
+               
+            }
+            .img-plus-1:hover{
+                cursor: pointer;
+                height: 32px;
+                width: 32px;
             }
             .img-plus-2{
-                height: 40px;
-                width: 40px;
-                
+                height: 45px;
+                width: 45px;
+            
             }
            
+            .img-plus-2-{
+                height: 40px;
+                width: 45px;
+                margin-left: 10px;
+            }
+            
             .small-tag{
                 display:flex;
                 flex-direction: row;
@@ -103,6 +128,38 @@
                 width: 203px;
                 font-size: 25px;
                 }
+                .btn--{
+                   border-radius: 100%; 
+                   height: 34px;
+                   width: 34px;
+                   margin:2px;
+                   padding: 3px;
+                   border: 1px solid black;
+                }
+                .btn--:hover{
+                    height: 36px;
+                width: 36px;
+                }
+                .btn-{
+                   border-radius: 100%; 
+                   height: 34px;
+                   width: 34px;
+                   margin:2px;
+                   margin-top: 2px;
+                   border: 1px solid whitesmoke;
+                   padding: 3px;
+                }
+               
+                .divide{
+                    display: flex;
+                    flex-direction: row;
+                    
+                }
+                .height{
+                    font-size: 30px;
+                    margin-left: 3px;
+                    margin-right:3px;
+                }
     </style>
 </head>
 <body class="bg">
@@ -110,27 +167,36 @@
         <div class="card">
             <img src="./images/strawberry.jfif"class="img-1"/> 
             
-                <h1>Strawberries</h1>
-                <p>The garden strawberry is a widely grown hybrid 
+                <b class="title">Strawberries</b>
+                <div class="divide">
+                    
+                <p>
+                    The garden strawberry is a widely grown hybrid 
                    &nbsp;&nbsp;&nbsp;spacies of the genous Fragaria. It is cultivated 
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; worldwider for its fruit. 
-                </p><br/>
+                </p>
+                  
+                </div>
+                
             <div class="main">
               <div class="tag">
                <b class="stle">Quantity</b>
                 <div class="small-tag">
-            
-                    <button onClick="inc()"><img src="./images/add.png" class="img-plus"/></button>
-                <button onClick="reset()"><img src="./images/one.png" class="img-plus-1"/></button>
-                <button onClick="dec()"></button><img src="./images/minus.png" class="img-plus"/></button>
+                       
+                    <button onClick="inc()" class="btn--"><img src="./images/add.png" class="img-plus"/></button>
+                    <b id="counter"class="height">0</b>
+                    <button onClick="dec()" class="btn--"><img src="./images/minus.png" class="img-plus-0"/></button>
+                <button onClick="reset()" class="btn-"><img src="./images/recycle.png" class="img-plus-1"/></button>
+             
                 </div>
+
               </div>
               
               <div class="tag">
                 <b class="stle">Total Price</b>
                 <div class="small-tag">
-                <img src="./images/rupees.png" class="img-plus-2"/>
+                <img src="./images/rupees.png" class="img-plus-2-"/>
                 <img src="./images/seven.png" class="img-plus-2"/>
                 </div>
               </div>
